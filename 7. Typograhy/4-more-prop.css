@@ -1,0 +1,44 @@
+/* line-height = Specifies the distance between 2 lines vertically. We can set it's value as px,em,rem etc any CSS unit. Also if the value is set without any unit, i.e. just a number, in that case line height is calculated by (font-size for that element * number).
+
+letter-spacing = Specifies the distance between letters of a word. Values should be given with some units, simple number won't work.
+
+word-spacing = Specifies the distance between words in a text. Values should be given with some units, simple number won't work.
+
+text-decoration = Specifies the lining Style of Element. i.e. what type of lines do we want under our elements, overline, underline, line-through, etc. Mostly used to remove underline from the anchor/href links
+
+text-transform = Controls the casing of the elements, i.e. transforming text to be uppercase, lowercase, capitalize, etc.
+
+
+ */
+
+body{
+    /* line-height: 50px; */
+
+    /* In this case the line-height for every element will be (20 * 1.5 = 30px), except for the heading, since it has it's own font size, it's line height will be (40 * 1.5 = 60px) */
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 40px;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.one{
+    letter-spacing: 10px;
+    text-decoration: overline;
+    text-transform: lowercase;
+}
+
+.two{
+    word-spacing: 20px;
+    text-transform: capitalize;
+}
+
+a{
+    font-size: 2.5rem;
+    text-decoration: none ;
+}

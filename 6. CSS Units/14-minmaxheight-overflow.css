@@ -1,0 +1,67 @@
+/* 
+height:auto, min-height, max-height, overflow.
+ */
+
+/* We know that if we do not set any height and width for a div we won't be able to see it, but if we have any text content inside our div, the height and width adjust automatically, according to the content, which we call it as auto height and width. */
+
+/* The overflow property adjust the overflow of content outside the Div, let's say we have some text wirtten inside the div, and we have set some specified height and width for that element, but our content is too much that it can't fit in that height and width, in that case our content will flow out of the Div and creates a mess. One way to fix it is to re-adjust the height and width of the Div, but let's say for some reason we can't do that. In that case we use overflow property.
+
+overflow : hidden ==> It hides all the content that is flowing outside the div
+overflow : scroll ==> It will set a scroller in the content, i.e. we will be able to see all the content inside the div and it won't flow out of the div, but there will be a scroller added to the content, so we have to scroll down to view our full conten
+
+min-height ==> If we set the min-height to be something, and let's say we have a content, now when the content exceeds the min-height parameter, it will automatically readjusts it's height, i.e. it will increase the height of the div automatically as content start to overflow outside the div.
+
+max-height ==> Max height is opposite of min-height. If we have a some max-height set for a div, and if the content overflows from that div, in that case the height won't adjust itself i.e. we will be able to see the content overflowing but, if the content occupies less height than the height specified, than in that case the height will re-adjust itself to be samller.
+*/
+
+*{
+    margin: 0;
+}
+
+.navbar{
+    background: blue;
+    height: 100px;
+    color: white;
+    font-size: 3rem;
+}
+
+/* In this case the content will flow outsie the banner div. To control that we can either use overflow property or min-height property, but since we want our div height to increase automatically as the content overflows, we will use min-height property. To view what is the original height remove the comments from the banner below.*/
+/* .banner{
+    background: red;
+    height: calc(100vh - 100px);
+    width: 100vw;
+} */
+
+
+/* Example of height:auto */
+/* .example{
+    background: greenyellow;
+} */
+
+
+/* Example of overflow hidden */
+/* .example{
+    background: greenyellow;
+    height: 20rem;
+    width: 18rem;
+    overflow: hidden;
+} */
+
+
+/* Example of overflow scroll */
+.example{
+    background: greenyellow;
+    height: 20rem;
+    width: 18rem;
+    overflow: scroll;
+}
+
+.banner{
+    background: red;
+    /* height: calc(100vh - 100px); */
+    min-height: calc(100vh - 100px);
+    width: 100vw;
+
+    /* To see the effect of max-height, remove some text from .banner div from HTML. */
+    /* max-height: calc(100vh - 100px); */
+}

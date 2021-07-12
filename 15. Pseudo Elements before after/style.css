@@ -1,0 +1,43 @@
+/* 
+::before, ::after pseudo elements, creates elements and inserts before and after the Content.
+Does not work with Images.
+content : ''  == Required for pseudo elements to work.
+
+Syntax = Selector::before or after.
+*/
+
+
+p::before{
+    display: block;
+    background: black;
+    content: "Hello there I am before paragraph. ";
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+
+p::after{
+    display: block;
+    background: black;
+    content: " I am after the paragrah ";
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+
+/* If we are using content : "", i.e. content to be empty, we have to set height and width for that element otherwise it won't work*/
+
+h1::after{
+    display: block;
+    background: black;
+    content: "";
+    width: 100vw;
+    height: 30px;
+}
+
+/* This thing won't work since the content is empty and there is no width and height set for the content. */
+h1::before{
+    display: block;
+    background: black;
+    content: "";
+}

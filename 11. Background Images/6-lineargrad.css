@@ -1,0 +1,48 @@
+/* 
+    linear-gradient Syntax :
+    background : linear-gradient (position(optional), color1, color2, color3,......) 
+*/
+
+
+div{
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+}
+
+
+.one{
+    background: linear-gradient(red, green, blue);
+}
+
+
+.two{
+    background: linear-gradient(to top,red, green, #e9770c, #452ABC);
+}
+
+.three{
+    background: linear-gradient(to left,rgb(255, 0, 170), rgb(239, 243, 11), #e9770c, #452ABC);
+}
+
+.four{
+    background: linear-gradient(to right,tomato, rgb(255, 0, 170), rgb(239, 243, 11), #e9770c, #452ABC);
+}
+
+.five{
+    background: linear-gradient(315deg,  #e9770c,green, skyblue, orange );
+}
+
+
+.six{
+    background: linear-gradient(to top right, rgb(239, 243, 11), #e9770c,  #e9770c,green, skyblue, orange );
+}
+
+.seven{
+    background: linear-gradient(blue 30%, red 70%);
+}
+
+
+.eight{
+    background: linear-gradient(rgba(0,0,0,0.2) , rgba(0,0,0,0.8));
+}
+

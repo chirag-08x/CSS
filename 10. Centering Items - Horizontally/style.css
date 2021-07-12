@@ -1,0 +1,21 @@
+.one{
+    background : yellow;
+    width: 430px;
+    margin: 15px auto;
+}
+
+.two{
+    background :blueviolet;
+    color: white;
+    font-size: 30px;
+}
+
+.three{
+    background :  turquoise;
+    display: inline-block;
+    width: 470px;
+}
+
+div{
+    text-align: center;
+}

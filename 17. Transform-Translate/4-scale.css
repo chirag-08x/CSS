@@ -1,0 +1,33 @@
+/* Scale = Increases the size of the element in X-direction or Y-direction or Both. When we pass in values in scaleX() or scaleY()
+the size of the element increases in both sides of that axis, i.e. negative X-Axis and positive X-Axis, Similarly negative Y-Axis and positive Y-Axis*/
+
+/* Synatx = tranform : scaleX(integer_value), tranform : scaleY(integer_value), tranform : scale(x-value, y-value), 
+            tranform : scale(integer_value)*/
+
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+
+.one{
+    background: red;
+    /* This will double the size of the element in Both sides of X-axis. */
+    transform: scaleX(2);
+}
+
+.two{
+    background: green;
+    /* This will halfen the size of the element in both sides of Y-axis. */
+    transform: scaleY(0.5);
+}
+
+.three{
+    margin-left: 5rem;
+    background: blue;
+    /* Size increases by 1.2 times on X-axis and 1.5 times on Y-axis. */
+    transform: scale(1.2, 1.5);
+    /* Size increases by 2 times on both X-axis and Y-axis */
+    transform: scale(2);
+}

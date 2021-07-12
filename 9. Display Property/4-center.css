@@ -1,0 +1,38 @@
+/* 
+To center an inline element, all we have to do is target it's div/parent and do text-align : center. 
+
+But for Block level Elements, we first have to set width for those elements, and then we have to give them margin where top and bottom margin can be anything upto our choice, but the left and right margin has to be auto, and then set the parent property to be text-align : center.
+
+If we directly do text-align : center on a block level element, it will center the text inside the element, but it won't center the element on the page.
+
+Also for the inline elemetns, we can't set, width, height, margin-top, margin-bottom.
+*/
+
+img{
+    width: 200px;
+}
+
+.block{
+    background: blue;
+    color: white;
+    width: 300px;
+    margin: 2rem auto;
+}
+
+.inline{
+    background: red;
+    color: white;
+}
+
+body{
+    text-align: center;
+}
+
+/* width, height, margin-top, margin-bottom, Not going to work since, it's an inline Element. */
+span{
+    background: yellow;
+    width: 500px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 500px;
+}

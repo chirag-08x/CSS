@@ -1,0 +1,23 @@
+/*
+ calc() function is used to perform mathematical operation on elements(+, -, *, /). It can mix and match values. for example it can subtract 100vh - 100px, though both have different units. 
+ Syntax = calc(element1 - element2). Always add space before and after the mathematical operator in this case it's (-), otherwise calc function won't work. 
+ */
+
+
+*{
+    margin: 0;
+}
+.navbar{
+    background: blue;
+    height: 100px;
+    color: white;
+    font-size: 3rem;
+}
+
+
+/* If we do height = 100vh, then we have to scroll down, because we also have a navbar above so, it won't subtract navbar height by itself from the 100vh it will just add 100vh below the navbar. */
+.banner{
+    background: red;
+    height: calc(100vh - 100px);
+    width: 100vw;
+}

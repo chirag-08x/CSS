@@ -1,0 +1,46 @@
+/* Percent(%) are relative Unit/Values, i.e. they do depend on the Size of their Parent. While setting some value for the child element lets say width and height for the child element, we can't just set it to percent(%) directly since it's a relative unit, it will first look for the size of it's parent, and whatever the size of it's parent will be it will occupy that much percent of it's parent Element, but if we haven't already set any size for out parent div, so basically size of our parent div is 0, so any percent of 0
+i.e. let's say (0 % 55) will always be zero(0) only */
+
+/* If we do this we won't be able to see any change since we haven't set any initial size for our parent. */
+.child{
+    width : 80%;
+    height : 60%;
+    background: tomato;
+}
+
+/* We always set the parent value as an absolute value, if we set it with something relative, it will first look for it's parent parameter which is the body paramenter in this case and since we haven't set any parameters for body element this will not work. */
+.parent{
+    height: 300px;
+    width: 300px;
+    background: blue;
+}
+
+/* Now this thing will work fine. This value is going to be change as the parent value changes, i.e. if we set parent height to be 200px the our child height will be 60 % of 200px. */
+.child{
+    width : 60%;
+    height : 50%;
+    background: tomato;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Setting Parent Element with abosulte value */
+.main-parent{
+    height: 500px;
+    width: 500px;
+    background: yellow;
+}
+
+/* This will accquire 70% height and 60% width of 500px */
+.child-One{
+    height: 70%;
+    width: 60%;
+    background: blue;
+}
+
+/* In this case, it will accquire 70% and 60% of it's parent i.e. child-one, i.e. the most recent parent, it won't go to the absolute parent. Since we now have a height and width for it's parent, we can apply relative values on it. Having a height and width matters for the parent doesn't matter if the parent elements has height and width set as relative value. The absolute Parent should have the height and width as absolute values.*/
+.child-Two{
+    width : 50%;
+    height : 50%;
+    background: tomato;
+}

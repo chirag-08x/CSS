@@ -1,0 +1,33 @@
+/* 
+Using outline property we can move our border inwards or outwards. Positive value means outwards, negative value means inwards. We can have both border and outline for a single element. 
+outline : width type black
+outline-offset : distance_value
+*/
+
+.links{
+    margin:3rem;
+}
+
+a{
+    text-decoration: none;
+    background: rgb(153, 255, 0);
+    color: black;
+    padding: 1.5rem 1.8rem;
+    margin: 0 3rem;
+    text-transform: uppercase;
+}
+
+#one{
+    border: 0.2rem solid black;
+}
+
+#two{
+    border: 5px solid red;
+    /* outline-width: 0.2rem;
+    outline-color: #222;
+    outline-style: solid;
+    outline-offset: 10px;
+    outline-offset: -10px; */
+    outline : 0.2rem solid #222;
+    outline-offset: 10px;
+}

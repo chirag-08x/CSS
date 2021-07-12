@@ -1,0 +1,35 @@
+/* When we set position absolute for an element, the elements below and above that element completely ignores that element, and accquire it's space, though the element is still there. We can use top, left, bottom, right on the position absolute, it does not set element relative to it's original position like it did in relative, instead it looks for the body element i.e. the absolute parent container and positions itself relative to the parent. To position absolute container based on it's parent container not it's absolute parent, we should set it's parent container to be relative.*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    background: black;
+    height: 70vh;
+    width: 70vw;
+    margin: 5rem auto;
+    /* If we don't set parent to relative, the child absolute will position itself relative to <body> element. */
+    position: relative;
+}
+/* 
+.child-1{
+    height: 150px;
+    width: 150px;
+    background: red;
+} */
+
+.child-2{
+    height: 150px;
+    width: 150px;
+    background: green;
+    position:absolute ; 
+    top : 50%;
+    left: 50%; 
+}
+
+/* .child-3{
+    height: 150px;
+    width: 150px;
+    background: yellow;
+} */

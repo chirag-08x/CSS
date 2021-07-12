@@ -1,0 +1,45 @@
+ /* 
+    Shorthand - 
+    background : linear gradient (optional), background url, background-position/background-size background-attachment background-repeat
+ */
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    min-height: 100vh;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    border: 3px solid black;
+}
+
+.big-img{
+    background : linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('./big.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.folder-img{
+    background : linear-gradient(rgba(25, 26, 25, 0.3) , rgba(65, 192, 65, 0.3)) , url('./img/folder-img.jpeg')  center/cover fixed no-repeat;
+
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+
+.big-img2{
+    background :url('./big.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}

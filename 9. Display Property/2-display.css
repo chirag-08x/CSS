@@ -1,0 +1,24 @@
+/* 
+   Every Element has it's default display property set, some are inline elements and some are block level elements.
+   Block : Always starts a new line and spans full width.
+   Inline : Does any starts a new line and keeps on adding content. 
+   We can also change the default display property of an element, by setting display : inline or display : block
+*/
+
+img{
+   width: 200px;
+}
+
+.block{
+   background: blue;
+   color: white;
+   /* Changing default display Property. */
+   display: inline;
+}
+
+.inline{
+   background: rgb(255, 38, 0);
+   color: white;
+   /* Changing default display Property. */
+   display: block;
+}

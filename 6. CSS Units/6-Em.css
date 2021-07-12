@@ -1,0 +1,57 @@
+/*
+Em values are relative units, i.e. they depend upon their parent element. For em units, the base value for browser is already to set to 16px i.e. we don't have to set the size of the parent to use em, though it is a relative value. Though if we want we can set the parent element size and then em will work accordingly. It is a compounding unit.
+
+
+1em = 16px default browser style/size
+2em = base value(16px) * 2 = 32px
+3em = base value(16px) * 3 = 48px
+4em = base value(16px) * 4 = 64px
+
+
+Parent Element = 10px
+1em = 10 * 1 = 10px
+2em = 10 * 2 = 20px
+3em = 10 * 3 = 30px ...
+ */
+
+
+/* Em is mostly used to set the font-size and we should use it for that only.It's relative to the fon't size of the parent Element. But we can pretty much use Em for anything height, width, padding, margin, but, if we use em for the font size, it's relative to the font size of the parent element, but if we use Em for any other property it will work either on the basis on the font size set for the child element, or it will work with default 
+1em = 16px config. */
+
+.relative{
+    font-size: 32px;
+}
+
+.absolute{
+    font-size: 2em;
+}
+
+
+/* Without setting parent element size we can set our child element parameters using browser default values as 1em = 16px, so in our case 16 * 0 = 320px will be the height and width of the element */
+
+.parent{
+    font-size: 50px;
+}
+.child{
+    /* font-size = base-value for parent(50) * 2 = 50*2 = 100px. In this case we have changed the base value of em to be 50px, rather than default value 16px.*/
+    font-size: 2em;
+}
+
+
+
+.outer{
+    font-size: 18px;
+    height: 320px;
+    width: 320px;
+    background: tomato;
+}
+
+.inner{
+    /* Height and width will be 120px since the font-size if 1.5em = 18*1.5 = 27, so 5em = 27* 5 = 135. i.e. it will depend upon the font-size of it's font size itself and not the parent font size, since we are using it for different property than font-size.
+    If let's say we havem't set any font-size for .inner, them height and width would be using the standard em value i.e. 
+    1em = 16px*/
+    font-size: 1.5em;
+    height: 5em;
+    width: 5em;
+    background: yellow;
+}

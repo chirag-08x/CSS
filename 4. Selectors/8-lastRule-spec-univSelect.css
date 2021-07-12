@@ -1,0 +1,45 @@
+/* Last Rule = If we set any property for an element, and later again we set same property somewhere down in the file with a different value, then the property which was added last will be reflected */
+
+p{
+    color: rgb(255, 38, 0);
+}
+/* Last Rule property, green color will be reflected in the paragraph. */
+p {
+    color:green;
+}
+
+
+
+/* Specificity ==> Refers to the specificity of a Selector, i.e. which Selector has the more power, or which selector overwrites or does not overwrites the other Selctor */
+
+/* 
+1. Class Selector has more Specificity than Element Selector, i.e. if we set a property for an element using class selector, now later if we try to overwrite that property using the Element Selector like heading, paragraph, div, etc, it will not get changed since class has more specificity.*/
+
+.head{
+    color: mediumaquamarine;
+}
+
+h1{
+    color: red;
+}
+
+
+/*
+2. ID selectors have a higher specificity than attribute selectors and class selectors.
+*/
+
+#heading{
+    color: rgb(240, 109, 58);
+}
+
+.heading{
+    color: maroon;
+}
+
+
+/* Universal Selector(*) = Universal Selector selects all the elements at once. Also it has the least amount of Specificity */
+*{
+    color: blue;
+}
+
+/* ID Selector --> Class Selector --> Element Selector --> Universal Selector */

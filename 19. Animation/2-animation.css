@@ -1,0 +1,67 @@
+/* In Transition we have 3 states = first we start from 0%, then we go upto 100%, and then back to 0%. */
+
+/* Using Animations we can define Transition for multiple states, i.e. we can have a different transition when the Transition is on 20% i.e. 20% of the transition has been completed, similarly we can have transition for any number of states 0%, 1%, 5%, 75%,..etc */
+
+/* Syntax = animation : animation-name animation-duration animation-iteration-count */
+
+/* Syntax(KeyFrames) = @keyframes animation-name { transition-states } */
+
+div{
+    width: 200px;
+    height: 200px;
+    color: whitesmoke;
+    margin: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.transition{
+    background: red;
+    transition: all 3s linear 300ms;
+}
+
+.transition:hover{
+    background: green;
+    transform: translateX(40rem);
+}
+
+.animation{
+    background: brown;
+    /* animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+    animation-iteration-count: infinite; */
+
+    /* ShortHand */
+    animation : move 10s infinite;
+}
+
+/* The values will be considered form the starting point of the animation, not where the animation left-off last time. */
+@keyframes move {
+    0%{
+        background: hotpink;
+        transform: translate(10rem,3rem);
+        color: black;
+    }
+
+    15%{
+        background: black;
+        color: white;
+        transform: translateX(40rem);
+    }
+
+    50%{
+        background: violet;
+        transform: translateX(20rem);
+    }
+
+    75%{
+        background: turquoise;
+        color: black;
+        transform: translate(1rem, 15rem);
+    }
+
+    100%{
+        background: darkred;
+    }
+}

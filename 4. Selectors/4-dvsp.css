@@ -1,0 +1,19 @@
+/* Div Elements are used to target bunch of elements all at once, whereas Span is used to target a part of a line. */
+.red {
+    color: red;
+    font-size: 20px;
+}
+
+.green {
+    color: rgb(34, 202, 34);
+    font-size: 20px;
+}
+
+span{
+    color: rgb(155, 81, 6);
+    text-transform: uppercase;
+}
+
+.text{
+    color: rgb(0, 153, 255)
+}

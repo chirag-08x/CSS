@@ -1,0 +1,60 @@
+/* 
+min-width = Starting From, i.e. the changes will reflect when the screen size reaches to the particular value given. For example if we give 576px, then as the screen size reaches 576px then the changes will be applied for 576px and greater. We can have any number of media queries for any different screen size.
+*/
+
+/* max-width = Up To, i.e. the changes will remain upto the screen size mentioned. For example if the max-width is set to 700px, then upto 700px those changes will be applied and after that, the default styles will be applied, or if there is any media query with min-width then those changes will be applied after the width passed 700px. We can't have 2 or more max-width like we had for min-width, only the media query that was written last will be reflected. */
+
+/* If we overwrite any property in media query, then let's say we set up another media query for that element, then the change that was made in recent or previous media will be reflected in the new media query if not changed, not the original one.  */
+
+/* Be careful with syntax of media Query, even a simple space missing will won't make it run. */
+
+/* We should set mobile first. i.e. we should set media queries for mobile first. */
+
+body{
+    background: yellow;
+}
+
+.banner{
+    background: blue;
+}
+
+h1{
+    color: white;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+/*
+Only the properties that we are overwriting and the new properites that we are adding in the media query will change when the width changes, rest all the propeties remains the same. In the below example propeties, text-transform: capitalize; 
+text-decoration: underline; text-align: center; will remain same for Heading1(h1) and font-size which is a new property for h1 will also be added to it.
+*/
+
+@media screen and (min-width : 576px){
+    body{
+        background: red;
+    }
+
+    .banner{
+        background: yellow;
+    }
+
+    h1{
+        color: black;
+        font-size: 80px;
+    }
+}
+
+/* For the media query below also, the font-size for h1 will be 80px only. It won't be original font-size that we set up at the top of the code, instead it would be the most recent/previous font-size that we changed. */
+
+@media screen and (min-width : 792px){
+    body{
+        background: green;
+    }
+
+    .banner{
+        background: pink;
+        margin-top: 120px;
+    }
+}

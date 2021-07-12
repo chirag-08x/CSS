@@ -1,0 +1,79 @@
+/* Descendant = not a direct Child. If we target element like we did below, we will target all the direct Child and all the Descendants too. To avoid this we use (>) selector, which will select only the direct child of an element.*/
+
+.header h1{
+    color: red;
+}
+
+
+/* This will only Select the direct Child of the div with class header. */
+.header > h1{
+    color : blue;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* 
+First Line = To select the first line of a paragraph, heading, etc. 
+First Letter = To select the first letter of the paragraph, heading, etc. 
+Syntax = Selector::first-letter , Selector::first-line 
+*/
+
+.one::first-line{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.one::first-letter{
+    font-size: 250%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* 
+hover = Changes occur when we hover over the element, i.e. when our cursor is over that element
+Synatx = selector:hover 
+*/
+
+.box{
+    height: 200px;
+    width: 200px;
+    background: red;
+}
+
+/* Rest all the properties remains the same. */
+.box:hover{
+    background: green;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Link(<a> </a>) pseudo Classes.  */
+
+/* 
+:link = Targets only unvisited link with href.
+:visited = Targets the link that haven't been visited.
+:active =  Targets the link when it is clicked.
+*/
+
+a{
+    display: block;
+    background: red;
+    margin: 10px;
+}
+
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: rgb(16, 255, 16);
+}
+
+a:active{
+    color:black ;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Root(:root) pseudo class Selector i.e. (<html></html>) element. We can also select HTML element by directly typing html{ }, but when we select is using :root, it has higher specificity compared to html{} */

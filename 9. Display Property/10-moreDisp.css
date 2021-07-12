@@ -1,0 +1,50 @@
+/* 
+display : inline-block => using this we can set width, height, margin for our inline elements, and after applying it our inline elements does not become block elements, i.e. they do not start new line, but we can use every property of block elements on them.
+
+display : none => Element gets disappear from the page. Not only the element disappears but the space that it was occupying also vanishes away.
+
+opacity : range(0,1) inclusive, 0 = fully opaque, 1 = fully visible, difference b/w opacity : 0 and display : none is that,
+display : none vanishes away the space that was required by the element, but opacity : 0 doesn't, i.e. the space that the element was requiring before will still be there basically it will an empty space of white color, but browser still sees it as that some element lies in that space. i.e. it prevserves the space.
+
+visibility : hidden/visible ==> same is the case with visibility : none visibility as it was opacity, element will hide but preserves the space.
+ */
+
+a{
+    font-size: 1.2rem;
+    background:red;
+    height: 30px;
+    width: 40px;
+    margin: 15px 10px;
+    /* display: block; */
+    display: inline-block;
+}
+
+div{
+    background: brown;
+    color: white;
+    margin: 10px;
+    font-size: 1.3rem;
+}
+
+.none{
+    /* Element disappears from the page */
+    display: none;
+}
+
+.opacity-1{
+    opacity: 1;
+}
+
+.opacity-5{
+    opacity: 0.5;
+}
+
+.opacity-0{
+    opacity: 0;
+}
+
+.visibility{
+    visibility: hidden;
+}
+
+

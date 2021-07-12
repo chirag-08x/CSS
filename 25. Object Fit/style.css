@@ -1,0 +1,29 @@
+/* 
+Since both of our images will have different height, to get the same height for both images we can set the height property for both images, but if we do so, our images will get distorted, and will stretct out. To counter this we will use object-fit property. 
+*/
+
+/* 
+object-fit : cover; (cover the div with image, without distorting or stretching the image.f we use object-fit: cover; the image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit) 
+
+object-fit : contain; (If we use object-fit: contain; the image keeps its aspect ratio, but is resized to fit within the given dimension)
+*/
+
+img{
+    width: 100%;
+    display: block;
+    height: 500px;
+    object-fit: cover;
+}
+
+.one{
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+
+.two{
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+}
+

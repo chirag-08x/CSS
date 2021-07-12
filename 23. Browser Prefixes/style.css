@@ -1,0 +1,28 @@
+/* Not every browser supports every CSS property or every CSS3 property. To counter that we use browser prefixes, which will tell our that it's a new property and how to use it. */
+
+/* We are not supposed to use browser prefixes for every property, but for some prooperty we need to use them, to know for which property we have to use browser prefixes and get the prefix code for that property we can get it on, 
+http://shouldiprefix.com/ and https://caniuse.com/ */
+
+/* We don't have to type out the browser prefixes manually, though can do it if we want, but the better way would be to use VS Code extension Autoprefixer, after completion of project press F1 and run autoprefixer and it will add prefixes for the properties which needs browser prefixes.*/
+
+/* webkit = Chrome,safari,ios,android , moz = Mozilla, o = Opera, ms = Internet Explorer */
+
+
+div{
+    height: 250px;
+    width: 250px;
+    background: red;
+    -webkit-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+/* Add these setting to Autoprefixer JSON,
+
+"browsers": [
+  "last 4 versions",
+  "ie >= 9",
+  "> 5%"
+]
+
+*/

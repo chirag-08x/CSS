@@ -1,0 +1,31 @@
+/* 
+When we apply margin to an element, the size of that element increases i.e. the margin is not applies inwards within the element, instead the size of an element increases outwards, which makes it looks like padding has been applied. To avoid this and apply padding inwards only, we use the property of box-sizing : border-box . That's why it's better to declare box-sizing : border-box 
+inside the universal selector only.
+*/
+
+/* *{
+    box-sizing: border-box;
+} */
+
+.box-1, .box-2, .box-3{
+    height: 200px;
+    width: 200px;
+    color: white;
+}
+
+.box-1{
+    background: red;
+    font-size: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box-2{
+    background: blue;
+}
+
+/* Without Border - box, padding will be applied outwards. */
+.box-3{
+    background: green;
+    padding: 20px;
+}

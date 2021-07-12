@@ -1,0 +1,56 @@
+/* background-repeat : no-repeat = Does not repeat the background in the div.
+   background-repeat : repeat-x = Repeats the background in only x-axis.
+   background-repeat : repeat-y = Repeats the background in only y-axis.
+   background-repeat : space = Applies equal spaces b/w the images horizontally.
+   background-repeat : round = If there is exactly enough space to fit one more image in the div, then only the image gets repeated else not.
+
+   background-size : cover = Covers the whole div with image no matter how big the div is by stretching the image.
+   background-size : contain = Maintains the aspect ratio of the image and does not stretches it. Repeats the image and fill up the whole div by repeating the images by maintaining the aspect ratio. 
+
+   background-position : center = Center the image both on x-axis and y-axis.
+   background-position : left = Places the image on the left side, at center of y-axis
+   background-position : right = Places the image on the right side, at center of y-axis
+   background-position : top = Places the image on the top side, at center of x-axis
+   background-position : bottom = Places the image on the bottom side, at center of x-axis
+   background-position : (x-axis)%  (y-axis)% = Positions the image according to x and y axis percentage provided.
+ */
+
+ /* 
+    Shorthand - 
+    background : linear gradient (optional), background url, background-position/background-size background-attachment background-repeat
+ */
+div{
+    height: 300px;
+    color: white;
+    border: 3px solid black;
+}
+
+.big-img{
+    background : url('./big.jpeg');
+    background-repeat: round;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+.small-img{
+    background : url('./small.jpeg');
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: space;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    background-position: top;
+    background-position: right;
+    background-position: bottom;
+    background-position: left;
+    background-position: 20% 50%;
+}
+
+.folder-img{
+    background : url('./img/folder-img.jpeg');
+    /* background-repeat: round; */
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+}

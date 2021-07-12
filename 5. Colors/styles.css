@@ -1,0 +1,48 @@
+/* Shorthand for "background color" is "background" */
+/* Color with color Names */
+#first{
+    color: white;
+    background-color: black;
+}
+#second{
+    color: brown;
+    background: moccasin;
+}
+
+/* Color using RGB Values.  RGB range(0-255) inclusive. RGB = Red Green Blue.
+Black = rgb(0,0,0) , White = rgb(0,0,0)*/
+#three{
+    color: rgb(108, 235, 11);
+    background: rgb(0, 0, 0);
+}
+#four{
+    color: rgb(0, 0, 255);
+    background: rgb(192, 85, 8);
+}
+
+/* Colors using RGBA. RGBA = Red,Green,Blue,Alpha where alpha is the opacity/transparency of the color.
+   Value of rgb is of same range (0-255) inclusive. and Alpha values range is (0-1) inclusive, where,
+   0 = fully opaque/transparent and 1 = fully visible.  */
+
+#five{
+    color: rgb(13, 80, 83);
+    background: rgba(255, 0, 136, 0.9);
+}
+#six{
+    color: rgba(0, 0, 0, 0.5);
+    background: rgba(247, 147, 47, 0.7);
+}
+
+
+/* Colors using HEX values.
+   Range = 1,2,3,4,5,6,7,8,9,A(10),B(11),C(12),D(13),E(14),F(15)
+   #RRGGBB ==> RR = red, GG = green, BB = blue
+ */
+#seven{
+    color: #ff0000;
+    background: #1dffb7;
+}
+#eight{
+    color: #0cf7cc;
+    background: #3741fd;
+}

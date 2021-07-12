@@ -1,0 +1,13 @@
+:root{
+    font-size: 20px;
+}
+
+/* This thing remains same as 24px, since it's an absolute unit. */
+.absolute{
+    font-size: 24px;
+}
+
+/* Our relative will set it's font-size relative to the root element, i.e. 1.5rem = 1.5 * 20 = 30px */
+.relative{
+    font-size: 1.5rem;
+}

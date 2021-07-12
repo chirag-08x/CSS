@@ -1,0 +1,62 @@
+/* Element Selectors */
+
+h1 {
+    color : blue;
+}
+
+p {
+    color : brown;
+    font-size : 20px;
+}
+
+/* Grouping Slectors */
+/* We can group any selector Element, ID, class etc. */
+
+h2, h3 {
+    color : rgb(37, 161, 120);
+    font-size: 18px;
+}
+
+/* ID Selectors */
+/* Id's are unique don't name the two elements with same ID name. */
+
+#one{
+    color:coral;
+    font-size: 20px;
+}
+
+#two{
+    color:rgb(197, 10, 141);
+    font-size: 20px;
+}
+
+/* Class Selectors */
+
+.red{
+    color:red;
+    font-size: 18px;
+}
+
+.green{
+    color:green;
+    font-size: 20px;
+}
+
+/* We can combine ID and class Selector in html */
+
+#title {
+    font-size: 30px;
+}
+
+.yellow {
+    color:rgb(177, 177, 10);
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+

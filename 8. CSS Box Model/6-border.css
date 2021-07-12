@@ -1,0 +1,27 @@
+/* Border = Refers to the border of the Element.
+   border = width, type, color.    border = 5px solid black.
+   type = solid, dotted, dashed, etc.
+   If we don't want border on every side of the element, we also have properties of 
+   border-top, border-bottom, border-right, border-left.
+   border radius = Controls the edges of the border, i.e. how much curve we want in our border.
+*/
+
+
+body{
+    color: white;
+}
+
+h1{
+    background: tomato;
+    padding: 20px;
+    border: 8px solid black;
+    border-radius: 25px;
+}
+
+p{
+    background: brown;
+    padding: 20px;
+    border: 4px dotted blue;
+    border: 10px dashed rgb(47, 202, 253);
+    border-radius: 20%;
+}

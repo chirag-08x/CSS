@@ -1,0 +1,32 @@
+/* 
+text-shadow : x-axis y-axis blurr color;
+To generate text-shadow online we can use text-shadow generator  - 
+https://cssgenerator.org/text-shadow-css-generator.html
+*/
+
+h1{
+    text-shadow: 10px 0 0 red;
+    text-shadow: 0 10px 0 red;
+    text-shadow: 0 0 10px red;
+    text-shadow: 5px 2px 10px red;
+}
+
+
+/* box-shadow : x-axis y-axis blurr spread-radius color */
+/* We can also set the shadow to be inside the box by giving inset attribute at the start of the box-shadow. */
+/* Box-shadow generator = https://www.cssmatic.com/box-shadow */
+.box{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    margin: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.box-2{
+    width: 200px;
+    height: 200px;
+    background: #e7a61a;
+    margin: 20px;
+    box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

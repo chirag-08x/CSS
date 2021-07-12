@@ -1,0 +1,26 @@
+/* 
+When we set float property that element moves to the desired direction but, all the elements after the float element, floats around the empty space besides/after the float element, i.e. we are taking out our float element out of the normal flow. 
+
+To avoid the above behaviour i.e. elements after the float element, floating around the float element, we have a clear property, select the element that is being float, probably the next element of float element, and sets it clear property to the same direction as the float, if we set it to different direction, the elements still gonna float around float element.
+
+When there are two images side by side and both have the float properties, we set the next element clear property to both. If both the images are of the same size, we won't see the effect of clear : both
+*/
+
+.banner{
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.one{
+    float: right;
+}
+
+.two{
+    float: left;
+    height: 50px;
+}
+
+p{
+    /* clear: right; */
+    clear: both;
+}

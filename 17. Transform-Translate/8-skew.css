@@ -1,0 +1,24 @@
+/* The skewX and skewY transform functions tilt an element one way or the other. It stretches the element either on X-axis or on Y-axis.
+Syntax = transform : skewX(x_value in degree) , skewY(y_value in degree), skew(x_value, y_value). */
+
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+
+.one{
+    background: red;
+    transform: skew(70deg , 80deg);
+}
+
+.two{
+    background: green;
+    transform: skewY(-70deg);
+}
+
+.three{
+    background: blue;
+    transform: skewX(40deg);
+}

@@ -1,0 +1,8 @@
+1. Level of Priority/Preference (highest to lowest) ---- Inline CSS --> Internal CSS --> External CSS.
+2. Colors Resource ==> www.coolors.com, Google Fonts.
+3. For font size use em or rem.
+4. For height and width of an element use vh and vw.
+5. Images Resource = Pexels, unsplash.
+6. Gradient Resource = Colorzilla
+7. To remove that small spacing below the image i.e.b/w bottom image and bottom div, just set image display to be block. Because Image is an inline element and inline Element have some space reserved for them.
+8. The height of the image automatically adjusts itself when we change it's width, such that the image maintains it's Aspect Ratio.

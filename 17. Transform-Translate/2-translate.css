@@ -1,0 +1,32 @@
+/* transform : translate(), scale(), rotate(), skew() */
+
+/* translate() = Rotating the Element either on x-axis or y-axis. If we set translateX() with a percent unit, then it will be relative to width of the element, similarly translateY() will be relative to the height of the element. */
+
+/* If we add positive value for translate() it will move to the positive side of that axis, if we add a negative value for translate it will move negative side of that axis. */
+
+/* Synatx = transform : translateX(x-value),  transform : translateY(y-value),  transform : translate(x-axis, y-axis).  */
+
+
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.one{
+    background: red;
+    transform: translateX(30px);
+    transform: translateX(-30px);
+}
+
+.two{
+    background: green;
+    /* Box will move 75px i.e. 50% of the height. */
+    transform: translateY(50%);
+}
+
+.three{
+    background: blue;
+    /* This will move the box both in X-axis and Y-axis, that too by 150px i.e. 100% of width and height */
+    transform: translate(100%, 100%);
+}

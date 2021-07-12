@@ -1,0 +1,30 @@
+/* Sticky position acts just like relative position and fixed position, but it does not gets, fixed until we hit the head or top of that position sticky element while scrolling. While using sticky position we have to pass one of the top, left, bottom, right parameter otherwise it won't work. It moves relative to it's position just like position : relative;  */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    height: 100vh;
+    background: yellow;
+}
+
+.parent-2{
+    height: 100vh;
+    background: turquoise;
+}
+
+p{
+    font-size: 40px;
+    background: greenyellow;
+    position: sticky;
+    top: 0;
+}
+
+.parent-3{
+    height: 100vh;
+    background: pink;
+}

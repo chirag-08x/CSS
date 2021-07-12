@@ -1,0 +1,23 @@
+/* Position Static = Every element is default set to position static. Position static means that if there are two elements let's say two paragraphs, then in the order they are being written in the HTML, will be displayed in the same order in the browser. Always position to normal Flow. */
+
+div{
+    border: 5px solid black;
+    background: yellow;
+    margin: 40px;
+}
+
+.one{
+    background: blue;
+    color: white;
+}
+
+.two{
+    background: green;
+    color: white;
+}
+
+.special{
+    background: tomato;
+    color: black;
+    font-size: 25px;
+}

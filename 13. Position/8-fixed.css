@@ -1,0 +1,29 @@
+/* When we set an item to position : fixed, we set it relative to viewport(screen). Items stays whererver it is while we scroll.
+We can use top, left, bottom right. */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    min-height: calc(100vh - 50px);
+    background : aquamarine;
+    margin-top: 3.2rem;
+}
+
+h1{
+    height: 50px;
+    background : brown;
+    color: white;
+    text-align: center;
+    position : fixed;
+    width: 100vw;
+    top: 0;
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 3.5rem;
+}

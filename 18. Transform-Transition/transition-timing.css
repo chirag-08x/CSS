@@ -1,0 +1,45 @@
+/* transition-timing = How transition takes place, or flow of transition, or smoothness of transition. */
+
+/* 
+ease = default (slow-start, fast, slow-end)
+linear = same speed start to end.
+ease-in = Slow-Start
+ease-out = slow-end
+ease-in-out = slow-start, fast, slow-end
+*/
+
+/* Syntax = property duration timing delay */
+
+div{
+    height: 110px;
+    width: 110px;
+    font-size: 1.5rem;
+    color: white;
+    margin: 5px;
+    background: sienna;
+    text-align: center;
+}
+
+div:hover{
+    transform: translateX(20rem);
+}
+
+.ease{
+    transition: all 3s ease 300ms;
+}
+
+.linear{
+    transition: all 3s linear 300ms;
+}
+
+.ease-in{
+    transition: all 3s ease-in 300ms;
+}
+
+.ease-out{
+    transition: all 3s ease-out 300ms;
+}
+
+.ease-in-out{
+    transition: all 3s ease-in-out 300ms;
+}

@@ -1,0 +1,76 @@
+/* Z-index decides which element comes above of another element or which element comes below which element. The more the z-index of an element, the more it will be on the top of another element. */
+
+/* Z-index does not works on position Static. Default value of z-index is 0. Z-index = Z Axis. */
+
+/* Z-index can have both negative and positive values, and there are no ranges for z-index values, we can give any integer value. */
+
+img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.banner{
+    margin: 25px;
+    width: 80vw;
+    height: 70vh;
+    border: 5px solid black;
+    position: relative;
+}
+
+.one{
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.two{
+    top: 10%;
+    left: 10%;
+    z-index: 2;
+}
+
+.three{
+    top: 20%;
+    left: 20%;
+    z-index: 1;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+.box{
+    height: 45vh;
+    width: 20vw;
+    top: 30%;
+    left: 50%;
+    border: 5px solid slateblue;
+    position: absolute;
+}
+
+.box-1{
+    width: 150px;
+    height: 150px;
+    background: yellow;
+    top: 0;
+    left: 0;
+}
+.box-2{
+    width: 150px;
+    height: 150px;
+    background: green;
+    top: 10%;
+    left: 20%;
+    z-index: 2;
+}
+.box-3{
+    width: 150px;
+    height: 150px;
+    background: skyblue;
+    top: 20%;
+    left: 30%;
+    z-index: 1;
+}
+
+.square{
+    position: absolute;
+}

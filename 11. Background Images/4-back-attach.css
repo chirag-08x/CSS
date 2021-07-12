@@ -1,0 +1,53 @@
+/* 
+background-attachement : fixed =   As we scroll down only the text or any other items above the background starts to scroll but not the background image, it remains fixed.
+*/
+
+ /* 
+    Shorthand - 
+    background : linear gradient (optional), background url, background-position/background-size background-attachment background-repeat
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+div{    
+    min-height: 100vh;
+    color: white;
+    border: 3px solid black;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first{
+    background-image: url(./big.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+} 
+
+.folder-img{
+    background-image: url(./img/folder-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.second{
+    background-image: url(./big.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+

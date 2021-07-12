@@ -1,0 +1,27 @@
+/* 
+Padding = Refers to the space between content and border.
+padding-left, padding-right, padding-top, padding-bottom.
+padding : 10px => Adds 10px padding to every side of the element.
+padding : 30px 40px => padding : (top, bottom) (left,right)
+padding : top, right, bottom, left.
+We don't have negative padding like neagative margins.
+*/
+
+h1,p{
+    color: white;
+}
+
+h1{
+    background: tomato;
+    padding-top: 2.2rem;
+    padding-bottom: 3rem;
+    padding-right: 15rem;
+    padding-left: 20rem;
+}
+
+p{
+    background: brown;
+    /* padding: 20px; */
+    /* padding: 30px 100px; */
+    padding: 30px 45px 60px 15px;
+}

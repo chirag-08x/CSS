@@ -1,0 +1,32 @@
+/*
+vh = view Height, It is also a relative unit, but it's relative to the current Screen size, i.e. it will accquire percentage of the screen size as mentioned. 
+vw = view width, It is also a relative unit, but it's relative to the current Screen size, i.e. it will accquire percentage of the screen size as mentioned. 
+
+100vh = Take 100% height of the screen size available.
+50vh = Take 50% height of the screen size available.
+
+100vw = Take 100% width of the screen size available.
+50vw = Take 50% width of the screen size available.
+
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* This will take 100% of the height,width available of the screen size. */
+.hero{
+     background: tomato;
+     height: 100vh;
+     width: 100vw;
+ }
+
+
+/* This will show up below the .hero element, also since .hero accquires 100% of the screen, we will only able to see our .about element once we scroll down. */
+.about{
+    background: blueviolet;
+    height: 45vh;
+    width: 39vw;
+}

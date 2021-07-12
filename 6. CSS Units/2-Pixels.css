@@ -1,0 +1,14 @@
+/* Pixels = It is an Absolute Unit, i.e. 200px on computer will be same as 200px on phone, i.e. it is fixed unit it won't change it's size as the screen gets smaller or larger. or we can also say that, they don't depend on their parent.
+1 px represents 1 dot on a screen.
+ */
+
+ h1 {
+     /* This fon't size will be fixed irrespective of the screen size, we can see it by decreasing size of our chrome browser, or can even use Chrome Dev Tools. */
+     font-size: 100px;
+     background: blue;
+     color: white;
+     width: 250px;
+     height: 600px;
+     /* Same is the case with width and height, they are also fixed irrespective of our screens size. */
+     /* If we set the height, width or font or any other property values pixels to be greater than the screen size in that case we have to scroll the screeen sideways and downside, since our element won't adjust itself accordingly. */
+ }

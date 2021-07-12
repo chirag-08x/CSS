@@ -1,0 +1,26 @@
+/* rotate() = rotates the element on X-axis and Y-axis.
+   Degrees more than 360deg will be rounded off as, 380deg = 360 + 20 = 20deg.
+   Syntax = transform : rotate(degrees(+ or -)) */
+
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+
+.one{
+    background: red;
+    transform: rotate(-50deg);
+}
+
+.two{
+    background: green;
+    transform: rotate(20deg);
+    /* This will be same as 20deg */
+    transform: rotate(380deg);
+}
+
+.three{
+    background: blue;
+}

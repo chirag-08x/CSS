@@ -1,0 +1,35 @@
+/* When our Animation count is over, i.e. when our animation is done, and it's count is not set to infinity, in that case when our animation stops it will go back to the original State from where it started, to avoid this behaviour we use
+animation-fill-mode : forwards, which after the animation is complete, stops the animation at it's last position or at 
+keyframe {100%}, and won't go back to the original State. */
+
+div{
+    height: 250px;
+    width: 250px;
+    color: white;
+    background: black;
+    font-size: 1.5rem;
+    text-align: center;
+    animation : move 5s 2;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    0%{
+        background: black;
+    }
+
+    25%{
+        background : brown ;
+        transform : translateX(200px);
+    }
+
+    50%{
+        background: red;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        background: navy;
+        transform : translateX(20rem);
+    }
+}

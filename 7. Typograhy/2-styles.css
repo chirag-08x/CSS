@@ -1,0 +1,55 @@
+/* 
+font-size = Controls the size of the Font.
+
+font-family = Controls the font of the element.
+
+font-stack = We can pass in several font-family at once coz if in a particular case our browser does not support the first font given, it will display second, if second is not supported it will display third and so on. And at last we pass the generic font-family which is always available in every browser, just in case none of the previous specified fonts are working this one is always going to work. Below listed are the 5 generic family.
+generic-family = serif, cursive, sans-serif, fantasy, monospace.
+
+font-weight = Font Weight is responsible for how thick or thin characters should be in the text. Font weight values starts from 100 and goes all the way upto 900 but not every font supports every value of font-weight. There are some specified font-weight values for every font, beyon which it can't go.
+
+font-style = It is responsible for the styling of the font as italic, oblique etc.
+
+text-align = Aligns the text to the left, right or center. 
+
+text-indent = The text-indent property specifies the indentation of the first line in a text-block. Negative values are allowed. The first line will be indented to the left if the value is negative.
+   
+*/
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: right;
+    text-align: left;
+    text-align: center;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.lorem{
+    font-weight: 700;
+    text-align: left;
+    text-indent: 5px;
+}
+
+/* There ar two ways to import Google fonts in CSS. 
+First one is listed below where we paste the link directly in the CSS file.
+Second one is to paste the <link> </link> provided by the Google Fonts in the head of the HTML.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-style: oblique;
+    text-align: right;
+}
+
+.google{
+    font-family: 'Kirang Haerang', cursive;
+    font-size: 35px;    
+}
+

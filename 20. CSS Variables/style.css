@@ -1,0 +1,59 @@
+/* 
+CSS Variables = allows us to store values in one place and use them later in our code, just by the variable name
+Syntax = --varibale_name : value
+Syntax to call that variable back = property_name : var(--variable_name)
+Scope 
+:root{} === global
+element{} === local
+*/
+
+:root{
+    --color-primary : red;
+    --color-seconday : rgb(0, 60, 255);
+    --spacing : 5px;
+    --main-transtion : all 2s linear;
+    --f-size : 1.3rem;
+}
+
+h1{
+    color: var(--color-primary);
+}
+
+h2{
+    color: var(--color-primary) ;
+}
+
+h3{
+    color: var(--color-primary);
+    transition: var(--main-transtion);
+}
+
+p{
+    letter-spacing: var(--spacing);
+    transition: var(--main-transtion);
+    font-size: var(--f-size);
+}
+
+p:hover{
+    color: var(--color-seconday);
+}
+
+h3:hover{
+    color: var(--color-seconday);
+}
+
+
+div{
+    --primaryRed : red;
+}
+
+/* The --primaryRed is accessbile only to the div and it's children, since it's scope is local. */
+.main-text{
+    color: var(--primaryRed);
+}
+
+/* This thing will not work, it's color will go back to default if we do this. */
+
+/* h2{
+    color: var(--primaryRed);
+} */

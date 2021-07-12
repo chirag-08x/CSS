@@ -1,0 +1,29 @@
+/* 
+
+Margin = Refers to the distance between element and it's adjancent Elements.
+margin-left, margin-right, margin-top, margin-bottom.
+margin : 10px => Adds 10px margin to every side of the element.
+margin : 30px 40px => margin : (top, bottom) (left,right)
+margin : top, right, bottom, left.
+
+We also have negative margin, in which our element will move to the other side.
+margin-top : -50px;
+
+*/
+
+*{
+    margin: 0;
+    color: white;
+}
+
+h1{
+    background: tomato;
+    margin-top: 20px;
+}
+
+p{
+    background: brown;
+    /* margin: 30px; */
+    /* margin: 30px 40px; */
+    margin: 100px 30px 40px 50px;
+}

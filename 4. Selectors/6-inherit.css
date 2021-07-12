@@ -1,0 +1,19 @@
+/* All the Child Elements of a Parent, inherit the same styles and properties as that of parents, unless child element has it's own styles and properites */
+
+body{
+    color:rgb(255, 38, 0);
+    font-family: monospace;
+    font-size: 25px;
+}
+
+/* Overwriting the Parent Element Properites */
+.special{
+    color: rgb(3, 190, 3);
+    font-size: 30px;
+}
+
+/* Overwriting the Parent Element Properites */
+h2{
+    color: rgb(18, 156, 241);
+}
+

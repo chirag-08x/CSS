@@ -1,0 +1,15 @@
+/* Rem values doesn't depend upon the font-size of it's parent, instead it depeneds upon the font size of root element i.e. <html> element. And if root element doesn't have any font-size set it used the default browser value 1rem = 16px.
+Using rem values for other properties like height, width, margin, padding they all will still be relative to the root element and not the parent or self element. It's better to use rem over em. */
+
+html{
+    font-size: 20px;
+}
+
+.parent{
+    font-size: 16px;
+}
+
+.child-rem{
+    /* In this case 2rem = 40px and not 16px since our root font-size is 20px so 20*2 = 40px */
+    font-size: 2rem;
+}
