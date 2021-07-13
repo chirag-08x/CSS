@@ -1,6 +1,6 @@
 /* transform : translate(), scale(), rotate(), skew() */
 
-/* translate() = Rotating the Element either on x-axis or y-axis. If we set translateX() with a percent unit, then it will be relative to width of the element, similarly translateY() will be relative to the height of the element. */
+/* translate() = Shifts the Element either on x-axis or y-axis. If we set translateX() with a percent unit, then it will be relative to width of the element, similarly translateY() will be relative to the height of the element. */
 
 /* If we add positive value for translate() it will move to the positive side of that axis, if we add a negative value for translate it will move negative side of that axis. */
 
