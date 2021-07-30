@@ -1,0 +1,71 @@
+/* 
+Whenever working with flex-box we need to have 2 elements, one a parent div and inside that are it's children. Parent and children can be any HTML Tags, not just divs.
+*/
+
+/* Setting the parent container to be flex */
+.container{
+    /* flex is a block level element */
+    display: flex;
+    /* inline-flex is a inline level flex element */
+    /* display: inline-flex; */
+}
+
+
+/* Flex properties are divided into two parts, first when flex properties are set to parent element, in that case it will apply those changes to all it's children elements. Second when flex properties are set to individual child element, so that it only affects that particular child. */
+
+/* Flex Direction = specifies where the flex direction will start. Set to parent element.
+   row(default) =  Default, flex items are aligned in row. 
+   row-reverse =Changes not only the direction of flex-items but also reverses it's elements, in row.    
+   column =   Flex layout is column layout now.
+   column reverse = Flex layout is revesed in direction and elements as well.
+   Set to parent Element
+*/
+
+.container{
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+}
+
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f3f3f3;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.box{
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #f3f3f3;
+}
+
+.box-1{
+    background: lightgreen;
+}
+
+.box-2{
+    background: lightsalmon;
+}
+.box-3{
+    background: lightskyblue;
+}
+.box-4{
+    background: brown;
+}
+.box-5{
+    background: chocolate;
+}
+.generic{
+    background: turquoise;
+}
+
+
+
+

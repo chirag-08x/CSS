@@ -1,0 +1,60 @@
+/* 
+   align-item == Align the items on vertical axis.
+   stretch(default) ==== as the height of the container increases, items will stretch themselves out with the container.
+   flex-start === vertically aligns items to the top of the container.
+   flex-end === vertically aligns items to the end of the container.
+   center === vertically aligns all the items to the center of the container.
+   baseline === if some item height is more than the other, in that case the items will align themselves to a baseline, i.e. the content inside that item is still gonna lie in the same line.
+*/
+   
+
+.container{
+    display: flex;
+    height: 80vh;
+    /* default */
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+}
+
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f3f3f3;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.box{
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #f3f3f3;
+}
+
+.box-1{
+    background: lightgreen;
+    font-size: 4rem;
+}
+
+.box-2{
+    background: lightsalmon;
+}
+.box-3{
+    background: lightskyblue;
+}
+.box-4{
+    background: brown;
+    font-size: 6rem;
+}
+.box-5{
+    background: chocolate;
+}
+.generic{
+    background: turquoise;
+}

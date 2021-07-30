@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.5rem;
+    color: #ffffff;
+}
+
+.hero{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("./project-img.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

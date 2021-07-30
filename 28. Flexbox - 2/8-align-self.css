@@ -1,0 +1,51 @@
+/* align-self property is a child property, and is used to change position of a particular child in the container. */
+
+.container{
+    display: flex;
+    height: 400px;
+    align-items: center;
+}
+
+.box-5{
+    align-self: flex-end;
+    align-self: flex-start;
+    align-self: center;
+    align-self: stretch;
+    align-self: baseline;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f3f3f3;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.box{
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #f3f3f3;
+}
+
+.box-1{
+    background: lightgreen;
+}
+
+.box-2{
+    background: lightsalmon;
+}
+.box-3{
+    background: lightskyblue;
+}
+.box-4{
+    background: brown;
+}
+.box-5{
+    background: chocolate;
+}
+.generic{
+    background: turquoise;
+}

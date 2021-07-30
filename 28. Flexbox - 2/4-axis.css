@@ -1,0 +1,55 @@
+/* We have two axis cross axis and main axis, if the flex direction is row, then main axis is x-axis and cross axis and y-axis. Similarly if we have flex direction set to column, then main axis is y-axis and cross axis is x-axis */
+
+
+/* In this case we will use justify content to center our item horizontally, since our flex-direction is set to default row, so our  main axis is x-axis and cross axis and y-axis  */
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+/* In this case we will use align items to center our items horizontally, since our flex direction is set to column, so our main axis is y-axis and cross axis is x-axis  */
+.container-1{
+    margin-top: 1rem;
+    display: flex;
+    border: 5px solid turquoise;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f3f3f3;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.box{
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #f3f3f3;
+}
+
+.box-1{
+    background: lightgreen;
+}
+
+.box-2{
+    background: lightsalmon;
+}
+.box-3{
+    background: lightskyblue;
+}
+.box-4{
+    background: brown;
+}
+.box-5{
+    background: chocolate;
+}
+.generic{
+    background: turquoise;
+}

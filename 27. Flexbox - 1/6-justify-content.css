@@ -1,0 +1,65 @@
+/* 
+   justify-content = resposible for horizontal alignment of elements. Applied to parent container.
+
+   flex-start(default) == justifies all the content to the start of the container.
+
+   flex-end == justifies all the content to the end of the container.
+
+   center == justifies all the content at the center of the container.
+
+   space-between - gives equal spacing between the elements. The first item will start from the start of the container and the last item will end at the end of the container, and between them there will be equal spacing.
+
+   space-around - gives equal spacing around the elements and margins too. We will have double spacing this way, on on the left side of each container and one on the right side of each container. 
+
+   space-evenly = In this case there will be equal spacing b/w elements as well as margins. There will be no double spacing like space-around.
+
+   Applied to parent Element.
+
+*/
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f3f3f3;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.box{
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #f3f3f3;
+}
+
+.box-1{
+    background: lightgreen;
+}
+
+.box-2{
+    background: lightsalmon;
+}
+.box-3{
+    background: lightskyblue;
+}
+.box-4{
+    background: brown;
+}
+.box-5{
+    background: chocolate;
+}
+.generic{
+    background: turquoise;
+}
