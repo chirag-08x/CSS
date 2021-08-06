@@ -1,0 +1,59 @@
+/* The auto-fill and auto-fit can be used to replace media queries. The way they works is, for example we don't know how many 
+rows and column we are gonna have or maybe as the screen size gets bigger we want the more items to add in the rows, for that 
+case we can use auto-fill and auto-fit.  */
+
+/* auto-fill = The auto fill will keeps on adding the space for the items */
+/* auto-fit = The auto fit will only add space for the items that are present */
+
+.container{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, 200px); */
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+}
+
+.container-1{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, 200px); */
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.cell{
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    border: 3px solid red;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cell-1{
+    background: #581f18;
+}
+.cell-2{
+    background: #f0a202;
+}
+.cell-3{
+    background: #d95d39;
+}
+.cell-4{
+    background: #202c59;
+}
+.cell-5{
+    background: #51cb20;
+}

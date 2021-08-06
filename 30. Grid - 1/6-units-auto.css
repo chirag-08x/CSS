@@ -1,0 +1,67 @@
+/* 
+Units for the grid rows, and grid columns are the same.
+Units = px rem em % auto fr
+*/
+
+/* 
+px = Size of the columns remains same irrespective of the screen size.
+
+rem, em = works same as they used to work in normal flow, i.e. based on the default font-size. 
+
+% = works same where the given value will be percentage of the parent width and height.
+
+auto = It is a responsive unit and it will fill up all the extra space that is left in the column and will adjust itself according to the screen size.
+
+fr = Also a responsive unit, will cover it later.
+*/
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 300px 200px;
+    grid-template-columns: 12em  20rem 13rem;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 12rem 20rem auto;
+    grid-template-columns: auto auto auto;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.cell{
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    border: 3px solid red;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cell-1{
+    background: #581f18;
+}
+.cell-2{
+    background: #f0a202;
+}
+.cell-3{
+    background: #d95d39;
+}
+.cell-4{
+    background: #202c59;
+}
+.cell-5{
+    background: #51cb20;
+}

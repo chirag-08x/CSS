@@ -1,0 +1,70 @@
+/* 
+The gap property allows us to have some gap b/w our grid elements.
+
+Old Syntax (not preferable to use) - grid-column-gap : value; grid-row-gap : value;
+grid-gap : value(applied to both row and col)
+grid-gap : row-gap col-gap;
+
+New Syntax - 
+column-gap : value; 
+row-gap : value;
+gap : value(applied to both col and row)
+gap : row-gap col-gap;
+*/
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    /* grid-column-gap: 1.5rem;
+    grid-row-gap: 1rem;
+    grid-gap: 2rem;
+    grid-gap: 1.5rem 3rem; */
+
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    gap: 4rem;
+    gap: 2rem 5rem;
+}   
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.cell{
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    border: 3px solid red;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cell-1{
+    background: #581f18;
+}
+.cell-2{
+    background: #f0a202;
+}
+.cell-3{
+    background: #d95d39;
+}
+.cell-4{
+    background: #202c59;
+}
+.cell-5{
+    background: #51cb20;
+}

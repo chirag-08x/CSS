@@ -1,0 +1,54 @@
+/* align-content works same as it does in flexbox. Use to align items vertically. */
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(3, 200px);
+    align-content: stretch;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.cell{
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    border: 3px solid red;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cell-1{
+    background: #581f18;
+}
+.cell-2{
+    background: #f0a202;
+}
+.cell-3{
+    background: #d95d39;
+}
+.cell-4{
+    background: #202c59;
+}
+.cell-5{
+    background: #51cb20;
+}

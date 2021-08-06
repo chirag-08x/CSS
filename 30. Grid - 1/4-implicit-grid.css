@@ -1,0 +1,29 @@
+/* Implicit Grid means that if we have given parameters for 2 columns are there are more than 2 child elements inside the container then in that case grid will create defined size columns stacked on top of each other, no matter how many children elements there are. */
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 300px;
+    /* grid-template-columns: 200px 300px 150px; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.cell{
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    border: 2px solid red;
+}

@@ -1,0 +1,30 @@
+/* 
+To use cSS Grid we should have a parent container and some child items. To set a parent container to grid, set it's display : grid
+To set up our columns we will use grid-template-columns : size;
+*/
+.container{
+    display: grid;
+    grid-template-columns: 200px 300px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.cell{
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    border: 2px solid red;
+}

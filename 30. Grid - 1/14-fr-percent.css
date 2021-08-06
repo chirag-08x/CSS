@@ -1,0 +1,51 @@
+/* The problem with percentages is that, it won't shrink if we apply spacing b/w our columns, so the elements will flow out of the parent cotainer. That's why we should use fr unit only with grid. */
+
+.container{
+    min-height: 100vh;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 2rem 6rem;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.cell{
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    border: 3px solid red;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cell-1{
+    background: #581f18;
+}
+.cell-2{
+    background: #f0a202;
+}
+.cell-3{
+    background: #d95d39;
+}
+.cell-4{
+    background: #202c59;
+}
+.cell-5{
+    background: #51cb20;
+}

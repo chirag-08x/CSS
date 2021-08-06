@@ -1,0 +1,51 @@
+/* The minmax() function is used to define the min-width and max-width for a row or column.
+Syntax = minmax(min-width, max-width) */
+
+.container{
+    min-height: 100vh;
+    display: grid;
+    /* This means that our second column will shrink max to 300px and will expand max to 1fr, i.e. won't go beyond 300px */
+    grid-template-columns: 1fr minmax(300px, 1fr) 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.cell{
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    border: 3px solid red;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cell-1{
+    background: #581f18;
+}
+.cell-2{
+    background: #f0a202;
+}
+.cell-3{
+    background: #d95d39;
+}
+.cell-4{
+    background: #202c59;
+}
+.cell-5{
+    background: #51cb20;
+}

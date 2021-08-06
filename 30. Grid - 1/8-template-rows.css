@@ -1,0 +1,53 @@
+/* Grid template rows are used to control the number of rows inside the grid container, just like grid template columns is used to control the number of columns. When we are setting the grid template column and if there is any extra element which is beyond the grid template row coverage, reference below example, in that case our row height is automatically set to auto */
+
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 20rem auto;
+    grid-template-rows: 250px 8rem;
+    /* Above command is same as - */
+    grid-template-rows: 250px 8rem auto;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.cell{
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    border: 3px solid red;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cell-1{
+    background: #581f18;
+}
+.cell-2{
+    background: #f0a202;
+}
+.cell-3{
+    background: #d95d39;
+}
+.cell-4{
+    background: #202c59;
+}
+.cell-5{
+    background: #51cb20;
+}

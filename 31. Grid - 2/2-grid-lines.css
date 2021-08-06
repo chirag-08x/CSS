@@ -1,0 +1,80 @@
+/* Using Grid lines we can span our grid elements, upto any grid line. When we change element spanning over grid lines, the other
+elements shifts downwards or sidewards accordingly. We can also use negative grid line numbers. */
+/* 
+Syntax :
+grid-column-start : starting-grid-line-number;
+grid-column-end : ending-grid-line-number;
+grid-row-start : starting-grid-line-number;
+grid-row-end : ending-grid-line-number;
+*/
+
+/* 
+Shorthand - 
+grid-column : start/end;
+grid-row : start/end;
+*/
+
+/* If we have let's say 3 x 3 column layout and due to setting our grid-column and grid-row, that layout shifts and becomes biggger
+than 3 x 3, in that case the extra row and column, that is being shifted will not have any grid line and numbers. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin : 7rem;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100px 100px 100px ;
+    grid-template-rows: 100px 100px 100px;
+    gap: 1rem;
+}
+
+.cell-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* Using negative grid line numbers. */
+.cell-4{
+    grid-column: -4/-1;
+    /* We can also combine positive and negative gird line numbers. Both above and below code do the same thing. */
+    grid-column: 1/-1;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.cell{
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    border: 3px solid red;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cell-1{
+    background: #581f18;
+}
+.cell-2{
+    background: #f0a202;
+}
+.cell-3{
+    background: #d95d39;
+}
+.cell-4{
+    background: #202c59;
+}
+.cell-5{
+    background: #51cb20;
+}

@@ -1,0 +1,65 @@
+/* order property decides in which order our elements will be displayed in the layout. It is same as that of order in flexbox. 
+By default every item order is set to 0. Bigger the value of order for an element, later it will appear in the container. */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.cell-1{
+    order: 2;
+}
+
+.cell-6{
+    order: -1;
+}
+
+.cell-3{
+    order: 4;
+}
+
+.cell-5{
+    order: 3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+.cell{
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    border: 3px solid red;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cell-1{
+    background: #581f18;
+}
+.cell-2{
+    background: #f0a202;
+}
+.cell-3{
+    background: #d95d39;
+}
+.cell-4{
+    background: #202c59;
+}
+.cell-5{
+    background: #51cb20;
+}
